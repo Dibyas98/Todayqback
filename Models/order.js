@@ -38,8 +38,11 @@ const orderShema = new mongoose.Schema(
         require: true
     },
     items:{
-        type:Number,
+        type:String,
         require:true
+    },
+    file:{
+        type:String
     }
 })
 

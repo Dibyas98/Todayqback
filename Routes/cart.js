@@ -2,6 +2,7 @@ const express = require('express');
 const route = express.Router();
 const cartModel = require('../Models/cart')
 route.post('/cart', async (req, res) => {
+    console.log(req.body);
     try {
         const newCart = new cartModel({
             ...req.body
