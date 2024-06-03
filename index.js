@@ -30,6 +30,6 @@ app.use((req,res,next)=>{
     res.status(400).json({ message: 'Bad Request - No such route found'})
 })
 
-app.listen(3001,()=>{
+app.listen(10000,()=>{
     console.log('Server start at 3001');
 })
