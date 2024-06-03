@@ -3,6 +3,7 @@ const route = express.Router();
 const orerModel = require('../Models/order');
 
 route.post('/order', async (req, res) => {
+    console.log(req.body);
     try {
         const newOrder = new orerModel({
             ...req.body
